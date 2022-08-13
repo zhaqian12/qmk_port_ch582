@@ -2,11 +2,13 @@ include_sub_directories_recursively(${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/qu
 
 include_directories(${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware
                     ${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/lib/printf
+                    ${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/drivers/eeprom
                     )
 
 file(GLOB_RECURSE quantum_SOURCES 
                     "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/lib/printf/*.c"
-
+                    "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/drivers/eeprom/eeprom_driver.c"
+                    
                     # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/audio/*.c"
                     # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/backlight/*.c"
                     "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/bootmagic/*.c"

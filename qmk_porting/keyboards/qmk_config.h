@@ -55,6 +55,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RAW_ENABLE
 #define VIA_ENABLE
 #define EEPROM_ENABLE
+#define EEPROM_WEAR_LEVELING
 #define RGBLIGHT_ENABLE
 #define COMMAND_ENABLE
 
