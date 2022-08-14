@@ -1,11 +1,9 @@
 // Copyright 2022 Nick Brassel (@tzarc)
 // SPDX-License-Identifier: GPL-2.0-or-later
 #pragma once
-
-#ifdef EEPROM_WEAR_LEVELING
-
 #include <stdint.h>
 #include <stdlib.h>
+
 /**
  * @typedef Status returned from any wear-leveling API.
  */
@@ -54,5 +52,3 @@ wear_leveling_status_t wear_leveling_write(uint32_t address, const void* value, 
  * @return Status of the request
  */
 wear_leveling_status_t wear_leveling_read(uint32_t address, void* value, size_t length);
-
-#endif

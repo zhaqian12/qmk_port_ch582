@@ -1,8 +1,5 @@
 // Copyright 2022 Nick Brassel (@tzarc)
 // SPDX-License-Identifier: GPL-2.0-or-later
-
-#ifdef EEPROM_WEAR_LEVELING
-
 #include <stdint.h>
 #include <string.h>
 
@@ -24,5 +21,3 @@ void eeprom_read_block(void *buf, const void *addr, size_t len) {
 void eeprom_write_block(const void *buf, void *addr, size_t len) {
     wear_leveling_write((uint32_t)addr, buf, len);
 }
-
-#endif

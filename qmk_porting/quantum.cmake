@@ -2,16 +2,14 @@ include_sub_directories_recursively(${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/qu
 
 include_directories(${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware
                     ${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/lib/printf
-                    ${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/drivers/eeprom
                     )
 
 file(GLOB_RECURSE quantum_SOURCES 
                     "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/lib/printf/*.c"
-                    "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/drivers/eeprom/eeprom_driver.c"
-                    
+
                     # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/audio/*.c"
                     # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/backlight/*.c"
-                    "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/bootmagic/*.c"
+                    "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/bootmagic/magic.c"
                     "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/debounce/sym_eager_pk.c"
                     # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/debounce/asym_eager_defer_pk.c"
                     # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/encoder/*.c"
@@ -19,10 +17,10 @@ file(GLOB_RECURSE quantum_SOURCES
                     # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/led_matrix/*.c"
                     "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/logging/*.c"
                     # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/painter/*.c"
-                    "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/process_keycode/process_rgb.c"
+                    # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/process_keycode/process_rgb.c"
                     "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/process_keycode/process_magic.c"
                     # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/rgb_matrix/*.c"
-                    "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/rgblight/*.c"
+                    # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/rgblight/*.c"
                     # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/sequencer/*.c"
                     # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/split_common/*.c"
                     "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/action_layer.c"
@@ -31,13 +29,13 @@ file(GLOB_RECURSE quantum_SOURCES
                     "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/action.c"
                     "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/bitwise.c"
                     "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/caps_word.c"
-                    "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/color.c"
+                    # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/color.c"
                     "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/command.c"
                     # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/crc.c"
                     "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/deferred_exec.c"
                     # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/digitizer.c"
                     # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/dip_switch.c"
-                    "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/dynamic_keymap.c"
+                    # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/dynamic_keymap.c"
                     "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/eeconfig.c"
                     # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/encoder.c"
                     # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/haptic.c"
@@ -61,6 +59,6 @@ file(GLOB_RECURSE quantum_SOURCES
                     # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/utf8.c"
                     # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/variable_trace.c"
                     # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/velocikey.c"
-                    "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/via.c"
+                    # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/via.c"
                     # "${CMAKE_CURRENT_LIST_DIR}/../qmk_firmware/quantum/wpm.c"
                     )

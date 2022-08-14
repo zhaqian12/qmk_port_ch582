@@ -57,7 +57,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #ifdef RGBLIGHT_ENABLE
 #define RGBLED_NUM        61
 #define RGB_DI_PIN        A14
-#define WS2812_BYTE_ORDER WS2812_BYTE_ORDER_RGB
 // #define RGBLIGHT_ANIMATIONS
 #define RGBLIGHT_EFFECT_BREATHING
 #define RGBLIGHT_EFFECT_RAINBOW_MOOD

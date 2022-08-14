@@ -2,8 +2,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 #pragma once
 
-#ifdef EEPROM_WEAR_LEVELING
-
 #ifdef __cplusplus
 #    define _Static_assert static_assert
 #endif
@@ -152,5 +150,3 @@ _Static_assert(LOG_ENTRY_TYPES <= (1 << 2), "Too many log entry types to fit int
             [1] = (uint8_t)((address) >> 1), /* address */                                            \
         }                                                                                             \
     }
-
-#endif

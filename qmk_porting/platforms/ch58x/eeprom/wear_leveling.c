@@ -1,8 +1,5 @@
 // Copyright 2022 Nick Brassel (@tzarc)
 // SPDX-License-Identifier: GPL-2.0-or-later
-
-#ifdef EEPROM_WEAR_LEVELING
-
 #include <stdbool.h>
 #include "fnv.h"
 #include "wear_leveling.h"
@@ -769,5 +766,3 @@ __attribute__((weak)) bool backing_store_write_bulk(uint32_t address, backing_st
     }
     return true;
 }
-
-#endif

@@ -1,8 +1,6 @@
 #include "eeprom.h"
 #include "eeprom_driver.h"
 
-#ifdef EEPROM_CUSTOM
-
 #define GET_ADDRESS(addr) (EEPROM_BASE_ADDR + (uint32_t)addr)
 #define GET_PAGE(addr) (uint32_t)((addr >> 8))
 #define GET_PAGE_ADDRESS(addr) (uint32_t)((addr >> 8) << 8)
@@ -65,5 +63,3 @@ void eeprom_write_block(const void *__src, void *__dst, size_t __n)
         }
     }
 }
-
-#endif
